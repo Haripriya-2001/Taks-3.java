@@ -1,0 +1,31 @@
+package switchstatement;
+
+import java.util.Scanner;
+
+public class Task3 
+{
+public static void main(String[] args)
+{
+Scanner wishing = new Scanner(System.in);
+System.out.print("You said \n1.Hi\t\n2.Hey\t\n3.Hello");
+System.out.println("\nEnter your choice: ");
+int choice = wishing.nextInt();
+switch(choice)
+{
+case 1:
+System.out.println("You said Hi.");
+break;
+case 2:
+System.out.println("You said Hey.");
+break;
+case 3:
+System.out.println("You said Hello.");
+break;
+default:
+System.out.println("Invalid choice.");
+break;
+}
+wishing.close();
+}
+
+}
